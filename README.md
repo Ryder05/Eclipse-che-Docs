@@ -13,4 +13,11 @@ In our case, opencellers can find here a devfile registrey where there is pre-de
 ![image](https://user-images.githubusercontent.com/59898800/169069683-fa843e69-7882-427d-b0ce-311c74292efc.png)
 
 
-3) For instance, we will use this devfile [ths](https://bitbucket.org/0sema/opencell-core/raw/21902644394a563dd5815e99e64f918031374b04/devfile.yaml) for spining up a new dev environment.
+
+
+4)  For instance, we will use this devfile [ths](https://bitbucket.org/0sema/opencell-core/raw/21902644394a563dd5815e99e64f918031374b04/devfile.yaml) for spining up a  dev environment containing maven 3.6.3 and jdk-11. 
+
+![image](https://user-images.githubusercontent.com/59898800/169074852-6b677654-6ad0-4c2f-a99a-d236c9af76f4.png)
+
+
+5) Well done! You have now a ready workspace shipped with all the dependecies needed. Happy coding !  
