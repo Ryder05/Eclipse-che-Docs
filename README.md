@@ -17,7 +17,7 @@ In our case, opencellers can find here a devfile registrey where there is pre-de
 
 
 
-4)  For instance, we will use this devfile [ths](https://bitbucket.org/0sema/opencell-core/raw/21902644394a563dd5815e99e64f918031374b04/devfile.yaml) for spining up a  dev environment containing maven 3.6.3 and jdk-11. 
+4)  For instance, we will use this devfile [ths]([https://bitbucket.org/0sema/opencell-core/raw/21902644394a563dd5815e99e64f918031374b04/devfile.yaml](https://github.com/Ryder05/Eclipse-che-Docs/blob/main/devfiles/opencellcore/devfile.yml)) for spining up a  dev environment containing maven 3.6.3 and jdk-11. 
 
 ![image](https://user-images.githubusercontent.com/59898800/169074852-6b677654-6ad0-4c2f-a99a-d236c9af76f4.png)
 
