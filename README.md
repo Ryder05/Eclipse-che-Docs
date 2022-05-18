@@ -23,3 +23,20 @@ In our case, opencellers can find here a devfile registrey where there is pre-de
 
 
 5) Well done! You have now a ready workspace shipped with all the dependecies needed. Happy coding !  
+
+## Know issues.
+### 500 Internal error 
+
+![image](https://user-images.githubusercontent.com/59898800/169079159-9f6c91a6-680d-4694-a72e-c6ac4cbb0510.png)
+
+If you have encountred this erro, it is due a access token being revoked and couldn't get refreshed.
+We reported this bug previously and got patched but still unocasionnaly apperes. 
+The workaround is to delete the browser cookies.
+
+### Bad Gateway
+We force workspaces that had been idle for a certain period of time to stop and gots it's resourced freed.
+If you opened an workspace and you decided to switch back to this workspace after it got timed out. 
+An blank page with bad gateway error will apper.
+The Solution is rather simplistic, you just need to go back to the home page and re-open the workspace.
+
+  
