@@ -1,4 +1,6 @@
 # Eclipse-che-Docs
+![image](https://user-images.githubusercontent.com/59898800/169078624-247625c2-5d3d-4702-9691-1a471e853c40.png)
+
 A documentation that explains how to use a self hosted instance of eclipse-che
 
 ## User Manual
