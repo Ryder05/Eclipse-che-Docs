@@ -29,7 +29,7 @@ In our case, opencellers can find here a devfile registrey where there is pre-de
 
 ![image](https://user-images.githubusercontent.com/59898800/169079159-9f6c91a6-680d-4694-a72e-c6ac4cbb0510.png)
 
-If you have encountred this erro, it is due a access token being revoked and couldn't get refreshed.
+If you have encountred this error, it is due a access token being revoked and couldn't get refreshed.
 We reported this bug previously and got patched but still unocasionnaly apperes. 
 The workaround is to delete the browser cookies.
 
