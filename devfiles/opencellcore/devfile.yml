@@ -14,23 +14,18 @@ components:
     id: redhat/java/latest
     preferences:
       java.server.launchMode: Standard
-  - alias: asciidoctor
+  - alias: redhat.vscode-yaml
     type: chePlugin
-    reference: https://che-plugin-registry-main.surge.sh/v3/plugins/joaompinto/asciidoctor-vscode/latest/meta.yaml
   - alias: github
     type: chePlugin
     id: ms-vscode/vscode-github-pullrequest/latest
-  - alias: shellcheck
-    type: chePlugin
-    reference: https://che-plugin-registry-main.surge.sh/v3/plugins/timonwong/shellcheck/latest/meta.yaml
-  - alias: vale
-    type: chePlugin
-    preferences:
-      vale.core.useCLI: true
-    reference: https://che-plugin-registry-main.surge.sh/v3/plugins/errata-ai/vale-server/latest/meta.yaml
   - alias: yaml
     type: chePlugin
     id: redhat/vscode-yaml/latest
+  - alias: bitbucket
+    type: chePlugin
+    id: atlassian.atlascode
+
   -
     type: dockerimage
     alias: opencell-core
