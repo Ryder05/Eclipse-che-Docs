@@ -3,7 +3,10 @@ metadata:
   generateName: opencell-core-
 projects:
   - name: opencell-core
-
+    source:
+      location: 'https://github.com/che-samples/bash'
+      type: git
+      branch: main
 
 components:
   -
