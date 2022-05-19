@@ -9,29 +9,31 @@ projects:
         origin: "https://github.com/spring-projects/spring-petclinic.git"
       checkoutFrom:
         revision: main
- components:
-    - name: exec-plugin
-     plugin:
-      id: machine-exec-plugin/0.0.1
-
-   - name: maven
-     container:
+components:
+  - name: maven
+    container:
       image: eclipse/maven-jdk8:latest
       volumeMounts:
         - name: mavenrepo
           path: /root/.m2
-       env:
+      env:
          - name: ENV_VAR
            value: value
-       endpoints:
+      endpoints:
          - name: maven-server
            targetPort: 3101
            protocol: https
-           secure: 'true'
+           secure: true
            exposure: public
-       memoryRequest: 256M
-       memoryLimit: 1536M
-       cpuRequest: 0.1
-       cpuLimit: 0.5
-       command: ['tail']
-       args: ['-f', '/dev/null']
+      memoryRequest: 256M
+      memoryLimit: 1536M
+      cpuRequest: "0.1"
+      cpuLimit: "0.5"
+      command: ['tail']
+      args: ['-f', '/dev/null']
+
+  - id: redhat/java11/latest
+    type: chePlugin
+
+  - id: atlassian/atlascode
+    type: chePlugin
