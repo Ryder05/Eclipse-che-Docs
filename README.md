@@ -39,4 +39,11 @@ If you opened an workspace and you decided to switch back to this workspace afte
 An blank page with bad gateway error will apper.
 The Solution is rather simplistic, you just need to go back to the home page and re-open the workspace.
 
-  
+### Atlassian extension authentification 
+The summary of the problem is, authorizing the app redirects to a localhost url that isn't available because the localhost isn't making the request.
+The issue is the plug-in expects/assumes the authentication source/requester is your localhost (127.0.0.1). The localhost IP is hardcoded into the source code. So after Jira has authenticated the request and provided a token, it’s using a callback function to redirect the request to a provided URL. The plug-in is hardcoded to provide 127.0.0.1 as a parameter to the callback function. Thus an incorrect callback URL when using a cloud-based IDE.
+You can find in the video below a fix to this issue. Resetting the workspace requires reapplying the workaround.  
+https://www.youtube.com/watch?v=_aAyh3vZP0o&ab_channel=Iamanant
+
+![image](https://user-images.githubusercontent.com/59898800/169276247-0830a0b8-2292-4ae4-b235-0b579b324e79.png)
+
