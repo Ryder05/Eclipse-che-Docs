@@ -25,13 +25,7 @@ components:
     type: chePlugin
     id: redhat/vscode-yaml/latest
     
-  - alias: bitbucket
-    type: chePlugin
-    id: atlassian.atlascode
-    
-  - alias: gitlens
-    type: chePlugin
-    id: eamodio.gitlens
+
   -
     type: dockerimage
     alias: opencell-core
