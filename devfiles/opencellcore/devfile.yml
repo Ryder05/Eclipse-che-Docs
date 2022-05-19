@@ -8,11 +8,7 @@ projects:
       location: "https://bitbucket.org/0sema/opencell-core/src/12.X/"
       branch: 12.X
 components:
-    
-  - alias: bitbucket
-    type: chePlugin
-    id: atlassian.atlascode
-    
+
 
   -
     type: dockerimage
