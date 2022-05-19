@@ -11,6 +11,7 @@ components:
   -
     type: dockerimage
     alias: opencell-core
+    memoryLimit: 3Gi
     image: sandbagg/opencellcore:alpha
   -
     type: chePlugin
