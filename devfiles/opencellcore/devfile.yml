@@ -3,7 +3,6 @@ metadata:
   generateName: opencell-core-
 projects:
   - name: opencell-core
-    memoryLimit: 3Gi
     source:
       type: github
       location: 'https://github.com/Ryder05/sveltejs.git'
