@@ -11,9 +11,6 @@ components:
   - alias: java11
     type: chePlugin
     id: redhat/java/latest
-
-  - alias: redhat.vscode-yaml
-    type: chePlugin
     
   - alias: github
     type: chePlugin
