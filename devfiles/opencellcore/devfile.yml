@@ -4,8 +4,9 @@ metadata:
 projects:
   - name: opencell-core
     source:
-      type: github
-      location: 'https://github.com/Ryder05/sveltejs.git'
+      type: bitbucket
+      location: 'https://0sema@bitbucket.org/0sema/opencell-core.git'
+      branch: 12.X
 components:
   -
     type: dockerimage
