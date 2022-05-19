@@ -3,10 +3,7 @@ metadata:
   generateName: opencell-core-
 projects:
   - name: opencell-core
-    source:
-      type: git
-      location: "https://0sema@bitbucket.org/0sema/opencell-core.git"
-      branch: 12.X
+
 
 components:
   -
@@ -16,16 +13,22 @@ components:
       java.server.launchMode: Standard
   - alias: redhat.vscode-yaml
     type: chePlugin
+    
   - alias: github
     type: chePlugin
     id: ms-vscode/vscode-github-pullrequest/latest
+    
   - alias: yaml
     type: chePlugin
     id: redhat/vscode-yaml/latest
+    
   - alias: bitbucket
     type: chePlugin
     id: atlassian.atlascode
-
+    
+  - alias: bitbucket
+    type: chePlugin
+    id: eamodio.gitlens
   -
     type: dockerimage
     alias: opencell-core
