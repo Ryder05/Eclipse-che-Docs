@@ -8,25 +8,12 @@ projects:
       location: "https://bitbucket.org/0sema/opencell-core/src/12.X/"
       branch: 12.X
 components:
-  - alias: java11
-    type: chePlugin
-    id: redhat/java/latest
-    
-  - alias: github
-    type: chePlugin
-    id: ms-vscode/vscode-github-pullrequest/latest
-    
-  - alias: yaml
-    type: chePlugin
-    id: redhat/vscode-yaml/latest
     
   - alias: bitbucket
     type: chePlugin
     id: atlassian.atlascode
     
-  - alias: gitlens
-    type: chePlugin
-    id: eamodio.gitlens
+
   -
     type: dockerimage
     alias: opencell-core
