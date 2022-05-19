@@ -19,3 +19,7 @@ components:
     preferences:
       java.server.launchMode: Standard
 
+  - 
+    type: chePlugin
+    alias: gitlens 
+    id:  eamodio/gitlens
