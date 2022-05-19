@@ -8,7 +8,6 @@ projects:
       location: "https://bitbucket.org/0sema/opencell-core/src/12.X/"
       branch: 12.X
 components:
-  -
     type: dockerimage
     alias: opencell-core
     image: sandbagg/opencellcore:alpha
