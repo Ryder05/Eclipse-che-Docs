@@ -29,7 +29,7 @@ components:
     type: chePlugin
     id: atlassian.atlascode
     
-  - alias: bitbucket
+  - alias: gitlens
     type: chePlugin
     id: eamodio.gitlens
   -
