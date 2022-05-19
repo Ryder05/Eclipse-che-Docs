@@ -1,39 +1,19 @@
-schemaVersion: 2.1.0
+apiVersion: 1.0.0
 metadata:
-  generateName: devfile-sample
-  version: 2.1.0
+  generateName: opencell-core-
 projects:
   - name: opencell-core
-    git:
-      remotes:
-        origin: "https://github.com/spring-projects/spring-petclinic.git"
-      checkoutFrom:
-        revision: main
+    source:
+      type: github
+      location: 'https://github.com/Ryder05/sveltejs.git'
 components:
-  - name: maven
-    container:
-      image: eclipse/maven-jdk8:latest
-      volumeMounts:
-        - name: mavenrepo
-          path: /root/.m2
-      env:
-         - name: ENV_VAR
-           value: value
-      endpoints:
-         - name: maven-server
-           targetPort: 3101
-           protocol: https
-           secure: true
-           exposure: public
-      memoryRequest: 256M
-      memoryLimit: 1536M
-      cpuRequest: "0.1"
-      cpuLimit: "0.5"
-      command: ['tail']
-      args: ['-f', '/dev/null']
-
-  - id: redhat/java11/latest
+  -
+    type: dockerimage
+    alias: opencell-core
+    image: sandbagg/opencellcore:alpha
+  -
     type: chePlugin
+    id: redhat/java/latest
+    preferences:
+      java.server.launchMode: Standard
 
-  - id: atlassian/atlascode
-    type: chePlugin
