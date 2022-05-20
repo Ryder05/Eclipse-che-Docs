@@ -16,5 +16,5 @@ components:
   - id: eamodio/gitlens/latest
     type: chePlugin
     
-  - id: eamodio/gitlens/latest
+  - id: atlassian/atlascode/latest
     type: chePlugin
