@@ -4,7 +4,7 @@ metadata:
 projects:
   - name: opencell-core
     source:
-      type: bitbucket
+      type: git
       location: 'https://0sema@bitbucket.org/0sema/opencell-core.git'
       branch: 12.X
 components:
