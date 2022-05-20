@@ -1,12 +1,6 @@
 apiVersion: 1.0.0
 metadata:
   generateName: opencell-core-
-projects:
-  - name: opencell-core
-    source:
-      type: git
-      location: 'https://0sema@bitbucket.org/0sema/opencell-core.git'
-      branch: 12.X
 components:
   -
     type: dockerimage
@@ -19,5 +13,8 @@ components:
     preferences:
       java.server.launchMode: Standard
 
+  - id: eamodio/gitlens/latest
+    type: chePlugin
+    
   - id: eamodio/gitlens/latest
     type: chePlugin
