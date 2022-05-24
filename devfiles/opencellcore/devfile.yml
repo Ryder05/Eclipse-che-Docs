@@ -23,8 +23,7 @@ components:
   - id: eamodio/gitlens/latest
     type: chePlugin
     
-  - id: eamodio/gitlens/latest
-    type: chePlugin
+
 
   - id: SonarSource/sonarlint-vscode/latest
     type: chePlugin
